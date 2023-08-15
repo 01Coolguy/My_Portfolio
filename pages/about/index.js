@@ -199,14 +199,17 @@ const About = () => {
             })}
           </div>
           <div>
-              {aboutData[index].info.map((item,itemIndex)=>{
-                return (<div key={itemIndex}>
-                  <div>
-                    {item.title}
-                  </div>
-                </div>
-                );
-              })}
+             {aboutData[index].info.map((item, itemIndex) => (
+              <div key={itemIndex}>
+              <div>{item.title}</div>
+              <div className='flex gap-x-4'>
+             {item.icons?.map((iconName, iconNameIndex) => {
+              const IconComponent = iconComponents[iconName];
+              return <div key={iconNameIndex} className='text-2xl text-white'><IconComponent /></div>;
+            })}
+               </div>
+               </div>
+      ))}
           </div>
           <div className=' py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start'>
             {aboutData[index].info.map((item,itemIndex)=>{
