@@ -1,23 +1,23 @@
-//  data
-import React,{ useState } from 'react';
+import React, { useState } from 'react';
 
-
-import{
+import {
   FaHtml5,
   FaCss3,
   FaJs,
   FaReact,
   FaWordpress,
   FaFigma,
-}from 'react-icons/fa'
+} from 'react-icons/fa';
 
-import{
+import {
   SiNextdotjs,
   SiFramer,
   SiAdobephotoshop,
   SiAdobexd,
-} from 'react-icons/si'
+} from 'react-icons/si';
 
+// Import iconComponents here
+import iconComponents from 'path-to-icon-components'; // Replace with the actual path
 
 export const aboutData = [
   {
