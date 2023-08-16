@@ -1,22 +1,19 @@
-import React,{ useState } from 'react';
-
-
-import{
+import React, { useState } from 'react';
+import {
   FaHtml5,
   FaCss3,
   FaJs,
   FaReact,
   FaWordpress,
   FaFigma,
-}from 'react-icons/fa'
+} from 'react-icons/fa';
 
-import{
+import {
   SiNextdotjs,
   SiFramer,
   SiAdobephotoshop,
   SiAdobexd,
-} from 'react-icons/si'
-
+} from 'react-icons/si';
 
 export const aboutData = [
   {
@@ -25,19 +22,15 @@ export const aboutData = [
       {
         title: 'Web Development',
         icons: [
-          <FaHtml5 />,
-          <FaCss3 />,
-          <FaJs />,
-          <FaReact />,
-          <SiNextdotjs />,
-          <SiFramer />,
-          <FaWordpress />,
+          <FaHtml5 key="html-icon" />,
+          <FaCss3 key="css-icon" />,
+          <FaJs key="js-icon" />,
+          <FaReact key="react-icon" />,
+          <SiNextdotjs key="next-icon" />,
+          <SiFramer key="framer-icon" />,
+          <FaWordpress key="wordpress-icon" />,
         ],
       },
-      // {
-      //   title: 'UI/UX Design',
-      //   icons: [<FaFigma />, <SiAdobexd />, <SiAdobephotoshop />],
-      // },
     ],
   },
   {
