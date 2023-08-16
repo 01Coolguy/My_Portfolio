@@ -23,39 +23,36 @@ export const testimonialSlider= [
   },
 ];
 
-
-
+import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-
-
-
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-
-
-
-
-//import required modules
-import {  Navigation,Pagination } from  'swiper';
-import {FaQuoteLeft} from 'react-icons/fa';
+import { Navigation, Pagination } from 'swiper';
+import { FaQuoteLeft } from 'react-icons/fa';
 import Image from 'next/image';
-import Link from 'next/link';
 
-
-const TestimonialSlider = () => {
+const TestimonialSlider = ({ testimonialData }) => {
   return (
-  <Swiper
-   navigation={true}
-   pagination={{
-    clickable:true,
-    }}
-    modules={{Navigation,Pagination}}
-   className='h-[400px]'
-   >
+    <Swiper
+      navigation={true}
+      pagination={{
+        clickable: true,
+      }}
+      modules={{ Navigation, Pagination }}
+      className='h-full'
+    >
+     
+
     {testimonialSlider.map((person,index)=>{
         return( 
         <SwiperSlide key={index}>
+
+
+
+
+
+          
          <div className='flex flex-col items-center md:flex-row gap-x-8 h-full px-16'>  
           {/* {avatar,name,position} */}
            <div className='w-full max-w-[300px] flex flex-col  xl:justify-center items-center relative mx-auto xl:mx-0'>
