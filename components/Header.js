@@ -8,7 +8,7 @@ const Header = () => {
         <div className="flex flex-col lg:flex-row justify-between items-center gap-y-6">
           <Link href="/">
             <h1 className="hover:text-accent transition-all duration-300 text-5xl lg:text-5xl xl:text-5xl text-white cursor-pointer transition duration-300 transform hover:scale-110 font-serif">
-              Prasoon Kumar
+              PRASOON KUMAR
             </h1>
           </Link>
           <Socials />

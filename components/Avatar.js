@@ -10,6 +10,7 @@ const Avatar = () => {
         height={678}
         alt="Your Alt Text Here"
         className="translate-z-0 w-full h-full"
+        loading="lazy" // Added lazy loading
       />
     </div>
   );

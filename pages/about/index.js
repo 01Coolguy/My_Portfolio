@@ -114,7 +114,7 @@ const About = () => {
               initial='hidden'
               animate='show'
               exit='hidden'
-              className='h2'>
+              className='h2 mb-6 md:mb-8 lg:mb-10 xl:mb-10 '>
               Captivating <span className='text-accent'>stories</span> birth magnificent designs.
             </motion.h2>
             <motion.p
